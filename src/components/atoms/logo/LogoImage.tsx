@@ -1,9 +1,10 @@
 import React from 'react'
+import * as S from './styled'
 
-const LogoImage = () => {
+export const LogoImage = () => {
     return (
-        <></>
+        <>
+            <S.Logo>Track-Receipt</S.Logo>
+        </>
     )
 };
-
-export default LogoImage;
