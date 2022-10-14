@@ -1,14 +1,16 @@
-import { Global } from '@emotion/react';
-import { RecoilRoot } from 'recoil';
-import Router from './router';
-import { reset } from './styles/Reset'
+import MainPage from "./pages/MainPage"
+import ReceiptPage from "./pages/ReceiptPage"
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
+
   return (
-    <RecoilRoot>
-      <Global styles={reset} />
-      <Router />
-    </RecoilRoot>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/print" element={<ReceiptPage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
