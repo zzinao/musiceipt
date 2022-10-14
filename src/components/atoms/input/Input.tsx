@@ -7,6 +7,7 @@ interface InputProps {
     onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
     onFocus?: () => void;
     placeholder: string;
+    value: string;
 }
 
 export const Input: React.FC<InputProps> = ({
@@ -14,13 +15,15 @@ export const Input: React.FC<InputProps> = ({
     onKeyDown,
     onFocus,
     inputName,
-    placeholder
+    placeholder,
+    value,
 }) => (
     <S.Input
         onChange={onChange}
         onKeyDown={onKeyDown}
         onFocus={onFocus}
         name={inputName}
+        value={value}
         placeholder={placeholder}
     />
 );
