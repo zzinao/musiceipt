@@ -9,6 +9,5 @@ export interface InputProps {
 export interface ITrackInfo {
     title: string;
     artist: string;
-    img: string;
-    length?: number;
+    img: string
 };
