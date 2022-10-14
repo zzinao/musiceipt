@@ -5,7 +5,7 @@ interface IProps {
     children: ReactNode;
 }
 
-// 왜 안되나..?
+// 왜 수정이 반영이 안돼!?
 export const ReceiptBg = ({ children }: IProps) => {
     return (
         <S.Background>{children}</S.Background>
